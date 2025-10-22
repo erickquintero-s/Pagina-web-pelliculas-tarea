@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - CineRick</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+  <header>
+    <h1>CineRick 🎬</h1>
+    <nav class="navbar">
+    <ul>
+      <li><a href="index.html" class="nav-link active">Inicio</a></li>
+      <li><a href="curiosidades.html" class="nav-link">Curiosidades</a></li>
+      <li><a href="https://wa.me/573008742234" target="_blank" class="nav-link enviar">Enviar</a></li>
+      <li><a href="RediseñoSeccionesE.pdf" download class="nav-link descargar">Descargar</a></li>
+    </ul>
+  </header>
+
+  <main class="contacto-main">
+    <section class="contact-form">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes dudas, sugerencias o quieres recomendar una película? ¡Escríbenos!</p>
+
+      <form id="form-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+
+      <div class="whatsapp">
+        <p>O envíanos un mensaje directo por WhatsApp:</p>
+        <a href="https://wa.me/573001112233" target="_blank" class="btn-whatsapp">💬 Enviar por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CineRick | Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('form-contacto');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Gracias por contactarnos, ' + form.nombre.value + '. ¡Te responderemos pronto!');
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

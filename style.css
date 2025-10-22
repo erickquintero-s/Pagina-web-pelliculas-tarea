@@ -115,3 +115,174 @@ margin-top: 30px;
 #curiosidades strong {
   color: #5ea8ff;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #18233b;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.nav-link {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #24365c;
+  transform: scale(1.1);
+}
+
+/* Botón de WhatsApp (Enviar) */
+.nav-link.enviar {
+  background-color: #25d366;
+  color: #fff;
+}
+
+.nav-link.enviar:hover {
+  background-color: #1ea955;
+}
+
+/* Botón de descarga */
+.nav-link.descargar {
+  background-color: #5ea8ff;
+  color: #fff;
+}
+
+.nav-link.descargar:hover {
+  background-color: #3b8ae3;
+}
+
+/* ====== Buscador ====== */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-container input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #1c2944;
+  color: #fff;
+}
+
+.search-container button {
+  background-color: #5ea8ff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-container button:hover {
+  background-color: #3b8ae3;
+  transform: scale(1.1);
+}
+.contacto-main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0c0c0c;
+  color: white;
+  padding: 40px;
+}
+
+.contact-form {
+  background: #1c1c1c;
+  padding: 30px 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #f5c518;
+}
+
+.contact-form p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2c2c2c;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 12px;
+  background: #f5c518;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: #ffda44;
+  transform: scale(1.05);
+}
+
+.whatsapp {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1eb85e;
+  transform: scale(1.05);
+}
